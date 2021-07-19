@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar{
+        width: 100%;
+        height: 50px;
+        background-color:thistle;
+
+    }
+    #navbar >h1{
+        margin: 0px;
+    }
+    #navbar>ul{
+        margin-top: 2px;
+    }
+    #product{
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        gap:2%;
+        margin:2%
+    }
+    ul{
+        list-style: none;
+        
+
+        
+    }
+    li{
+        float: right;
+        
+    }
+     li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 8px;
+        margin:0px;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    li a:hover{
+        background-color: thistle;
+        color: white;
+    }
+    button{
+        margin-top: 20px;
+    }
+    select{
+        margin-top: 20px;
+    }
+    #product img{
+        height:300px;
+        width:300px;
+        border:1px black solid;
+    }
+    #product:hover{
+        background-color: thistle;
+    }
+    h1{
+        text-align: center;
+        margin-top: 10px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+</style>
+<body>
+    <div id="navbar">
+        <h1>MS Jwellery Store</h1>
+        <ul>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </div>
+    <button onclick="LtoH()">Price:Low to High</button>
+    <button onclick="HtoL()">Price:High to Low</button>
+    <select name="Filter by Brand" id="fliter" onchange="filter()">
+        <option value="">Filter by Brand</option>
+        <option value="tanishq">Tanishq</option>
+        <option value="pc jwellery">PC Jwellery</option>
+        <option value="malabar gold">Malabar Gold</option>
+    </select>
+
+    <div id="product">></div>
+</body>
+</html>
+<script src="product.js"></script>

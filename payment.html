@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+
+    }
+
+    #myform {
+        margin-left: 40%;
+        margin-top: 30px;
+    }
+
+    #btn {
+        margin-left: 46%;
+        height: 30px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #btn:hover {
+        background-color: grey;
+    }
+
+    input {
+        height: 40px;
+        width: 300px;
+        border: black 2px solid;
+        margin-top: 2px;
+    }
+</style>
+
+<body>
+    <div id="payment"></div>
+    <div id="form">
+        <form id="myform">
+            <input type="text" id="card_num" placeholder="Card Number"><br>
+            <input type="password" id="cvv" placeholder="CVV"><br>
+            <input type="text" id="exp_date" placeholder="Expiry Date"><br>
+            <input type="text" id="name" placeholder="Card Holder Name"><br>
+            
+        </form>
+        <button id="btn" onclick="placeOrder()">Place Order</button>
+    </div>
+</body>
+
+</html>
+<script src="payment.js"></script>

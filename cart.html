@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<style>
+    img {
+        width: 50%;
+    }
+
+    #data {
+
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        gap: 5%;
+        margin-top: 100px;
+
+    }
+
+    #total {
+        border: black solid 1px;
+        height: 100px;
+        width: 80px;
+        display: flex;
+        float: right;
+
+    }
+
+
+    #heading {
+        height: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 65%);
+        gap: 20%;
+    }
+
+    #checkout {
+        float: right;
+    }
+</style>
+
+<body>
+    <div id="heading">
+        <h1>Cart Items</h1>
+        <div id=total></div>
+        <div id="promo">
+            <input type="text" placeholder="Enter Promo Code" id="promo_code">
+            <button id="apply" onclick="promoCode(Event)">Apply Promo</button>
+        </div>
+    </div>
+
+    <div id="checkout"><button onclick="checkout()">Checkout</button></div>
+
+    <div id="data"></div>
+
+</body>
+
+</html>
+<script src="cart.js"></script>
